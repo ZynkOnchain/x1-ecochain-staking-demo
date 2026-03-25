@@ -1,5 +1,6 @@
 # x1-ecochain-staking-demo
-Mini DeFi ecosystem built on X1 EcoChain testnet (EcoTokenV2 + Faucet + StakingV3)
+Mini DeFi ecosystem built on X1 EcoChain testnet (EcoTokenV2 + Faucet + StakingV3 + DAOvoting)
+
 ## Deployed Contracts
 Network: X1 EcoChain Testnet
 EcoTokenV2
@@ -8,6 +9,9 @@ FaucetV2
 0xa163645f8CC92edb69771a9EE35C37a63BF49d04
 StakingV3
 0x845857C36c2FE35c6aE35Cafc48d387748F77Acd
+DAOstaking
+0xc4659F53077807ace107D6Bd129Ffe130DD44547
+
 ## Architecture
 User
  ↓
@@ -18,6 +22,11 @@ EcoTokenV2
 StakingV3
  ↓
 Staking Pools
+ ↓
+DAOVoting 🏛️
+ ↓
+Protocol Decisions
+
 ## Features
 - ERC20 Token (EcoTokenV2)
 - Faucet token distribution
@@ -28,3 +37,12 @@ Staking Pools
 - 180 Day Pool (25% APY)
 - 365 Day Pool (80% APY)
 - Early withdrawal penalties
+
+## Governance
+The DAOVoting contract introduces decentralized governance:
+
+- Token holders can create proposals
+- Vote using their token balance
+- Decisions are made based on majority votes
+
+This adds a governance layer to the ecosystem.
